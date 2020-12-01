@@ -1,4 +1,6 @@
+import * as env from '../app/config/config';
+
 export const environment = {
   production: true,
-  flotiqApiKey: 'YOUR_FLOTIQ_API_KEY'
+  flotiqApiKey: env.flotiqApiKey
 };

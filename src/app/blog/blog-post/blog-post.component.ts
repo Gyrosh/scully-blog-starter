@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {ContentBlogPostService, Blogpost, Media} from 'flotiq';
+import {ContentBlogPostService, Blogpost, Media, ContentCategoryService} from 'flotiq';
 import {ActivatedRoute, Params} from '@angular/router';
 import {BlogPostService} from './blog-post.service';
 import {ImageService} from '../image.service';
@@ -19,7 +19,8 @@ export class BlogPostComponent implements OnInit {
     private flotiqService: ContentBlogPostService,
     private activatedRoute: ActivatedRoute,
     private imageService: ImageService,
-    private blogpostService: BlogPostService) {
+    private blogpostService: BlogPostService,
+    private category: ContentCategoryService) {
   }
 
   ngOnInit() {
